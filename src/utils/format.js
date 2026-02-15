@@ -6,11 +6,7 @@ export function formatPrice(value) {
   const absValue = Math.abs(value);
   let fractionDigits = 2;
 
-  if (absValue >= 1000) {
-    fractionDigits = 0;
-  } else if (absValue >= 100) {
-    fractionDigits = 1;
-  } else if (absValue < 1) {
+  if (absValue < 1) {
     fractionDigits = 4;
   }
 
