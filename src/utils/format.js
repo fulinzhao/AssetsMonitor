@@ -44,10 +44,12 @@ export function formatTime(timestamp) {
   }
 
   const date = new Date(timestamp);
-  return date.toLocaleTimeString("en-US", {
+  const dateStr = date.toLocaleDateString("en-CA"); // YYYY-MM-DD
+  const timeStr = date.toLocaleTimeString("en-US", {
     hour12: false,
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
   });
+  return `${dateStr} ${timeStr}`;
 }
