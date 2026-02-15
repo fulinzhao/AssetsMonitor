@@ -28,7 +28,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          VITE_QUOTE_PROXY_BASE_URL: https://assets-monitor-worker.fulinzhao.workers.dev
+          VITE_QUOTE_PROXY_BASE_URL: https://assets-monitor-proxy.vercel.app
 
       - uses: actions/upload-pages-artifact@v3
         with:
