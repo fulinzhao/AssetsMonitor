@@ -159,14 +159,14 @@ body {
 }
 
 .currency {
-  font-size: clamp(56px, 14vw, 150px);
+  font-size: clamp(28px, 7vw, 72px);
   line-height: 0.95;
   font-weight: 500;
   color: #d9e4ff;
 }
 
 .price {
-  font-size: clamp(68px, 18vw, 235px);
+  font-size: clamp(40px, 10vw, 120px);
   line-height: 0.85;
   font-weight: 600;
   letter-spacing: 0.01em;
